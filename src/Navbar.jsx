@@ -12,10 +12,10 @@ export default function Navbar({bg}){
         console.log("Clicked");
         }} className='text-white' size={30}/>
         <VscDebugRestart onClick={()=>{dispatch(setcount())}}  className='text-white cursor-pointer ml-5' size={30}/>
-        <div className='absolute top-0 flex right-0 p-4 gap-x-4'>
-          <div onClick={()=>bg('bg-pink-700')} className='size-10 rounded-lg border-2 cursor-pointer border-white bg-pink-700'></div>
-          <div onClick={()=>bg('bg-yellow-400')} className='size-10 rounded-lg border-2 cursor-pointer border-white bg-yellow-400'></div>
-          <div onClick={()=>bg('bg-blue-400')} className='size-10 rounded-lg border-2 cursor-pointer border-white bg-blue-400'></div>
+        <div className='absolute top-0 sm:flex right-0 p-4 gap-x-4'>
+          <div onClick={()=>bg('bg-pink-700')} className='size-10 rounded-lg border-2 mt-2 cursor-pointer border-white bg-pink-700'></div>
+          <div onClick={()=>bg('bg-yellow-400')} className='size-10 rounded-lg border-2 mt-2 cursor-pointer border-white bg-yellow-400'></div>
+          <div onClick={()=>bg('bg-blue-400')} className='size-10 rounded-lg border-2 mt-2 cursor-pointer border-white bg-blue-400'></div>
         </div>
     </div>
   )

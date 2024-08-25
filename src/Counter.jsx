@@ -9,7 +9,7 @@ export default function Counter({bgcolor}){
     return(
         <div className='flex p-7 w-full h-[80vh] justify-between items-center'>
             <button onClick={() => { dispatch(Decrement()) }} className={`size-16 rounded-full ${bgcolor} border-2 flex justify-center items-center border-white text-white`}><FaMinus className='text-white' size={25} /></button>
-            <p className='text-[200px] text-white'>{count}</p>
+            <p className='text-[100px] sm:text-[200px] text-white'>{count}</p>
             <button onClick={() => { dispatch(Increment()) }} className={`size-16 rounded-full ${bgcolor} border-2 flex justify-center items-center border-white text-white`}><FaPlus className='text-white' size={25} /></button>
         </div>
     )
